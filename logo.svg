@@ -1,70 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60" role="img" aria-label="DASS Bindra Consulting">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" width="300" height="64" role="img" aria-label="DASS Bindra Consulting">
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a56db;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a56db"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
     </linearGradient>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a56db;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa"/>
+      <stop offset="100%" style="stop-color:#38bdf8"/>
     </linearGradient>
   </defs>
 
-  <!-- Icon: Hexagon with network nodes -->
-  <g transform="translate(2, 2)">
-    <!-- Hexagon background -->
-    <polygon points="28,1 49,13 49,37 28,49 7,37 7,13"
-      fill="url(#grad1)" />
+  <!-- Icon: Stylized "DB" monogram inside a rounded square -->
+  <rect x="2" y="4" width="56" height="56" rx="14" fill="url(#blueGrad)"/>
 
-    <!-- Inner circuit / network lines -->
-    <line x1="28" y1="14" x2="28" y2="36" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
-    <line x1="16" y1="21" x2="40" y2="21" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
-    <line x1="16" y1="29" x2="40" y2="29" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
-    <line x1="16" y1="21" x2="28" y2="14" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
-    <line x1="40" y1="21" x2="28" y2="14" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
-    <line x1="16" y1="29" x2="28" y2="36" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
-    <line x1="40" y1="29" x2="28" y2="36" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <!-- Letter D -->
+  <path d="M14 18 L14 46 L22 46 Q34 46 34 32 Q34 18 22 18 Z
+           M20 24 L22 24 Q28 24 28 32 Q28 40 22 40 L20 40 Z"
+        fill="white"/>
 
-    <!-- Network nodes -->
-    <circle cx="28" cy="14" r="3"  fill="white" opacity="0.95"/>
-    <circle cx="16" cy="21" r="2.5" fill="white" opacity="0.85"/>
-    <circle cx="40" cy="21" r="2.5" fill="white" opacity="0.85"/>
-    <circle cx="28" cy="25" r="3.5" fill="white" opacity="1"/>
-    <circle cx="16" cy="29" r="2.5" fill="white" opacity="0.85"/>
-    <circle cx="40" cy="29" r="2.5" fill="white" opacity="0.85"/>
-    <circle cx="28" cy="36" r="3"  fill="white" opacity="0.95"/>
-
-    <!-- Center dot accent -->
-    <circle cx="28" cy="25" r="1.5" fill="url(#grad2)" opacity="0.9"/>
-  </g>
+  <!-- Letter B -->
+  <path d="M37 18 L37 46 L47 46 Q54 46 54 39 Q54 35 50 33 Q54 31 54 26 Q54 18 47 18 Z
+           M43 24 L46 24 Q48 24 48 27 Q48 30 46 30 L43 30 Z
+           M43 35 L47 35 Q50 35 50 39 Q50 42 47 42 L43 42 Z"
+        fill="white"/>
 
   <!-- Wordmark -->
-  <g transform="translate(66, 0)">
-    <!-- DASS -->
-    <text x="0" y="34"
-      font-family="'Segoe UI', Arial, sans-serif"
-      font-size="26"
-      font-weight="800"
-      letter-spacing="-0.5"
-      fill="url(#grad1)">DASS</text>
+  <!-- DASS in white bold -->
+  <text x="72" y="30"
+    font-family="'Segoe UI', system-ui, Arial, sans-serif"
+    font-size="22"
+    font-weight="800"
+    fill="white"
+    letter-spacing="-0.3">DASS</text>
 
-    <!-- Bindra -->
-    <text x="76" y="34"
-      font-family="'Segoe UI', Arial, sans-serif"
-      font-size="26"
-      font-weight="800"
-      letter-spacing="-0.5"
-      fill="#0f172a"> Bindra</text>
+  <!-- Bindra in accent blue -->
+  <text x="132" y="30"
+    font-family="'Segoe UI', system-ui, Arial, sans-serif"
+    font-size="22"
+    font-weight="800"
+    fill="url(#iconGrad)"
+    letter-spacing="-0.3"> Bindra</text>
 
-    <!-- Consulting tag -->
-    <text x="1" y="50"
-      font-family="'Segoe UI', Arial, sans-serif"
-      font-size="10"
-      font-weight="600"
-      letter-spacing="3"
-      fill="#64748b">CONSULTING</text>
+  <!-- Divider line -->
+  <rect x="72" y="36" width="180" height="1.5" rx="1" fill="rgba(255,255,255,0.15)"/>
 
-    <!-- Thin underline accent -->
-    <rect x="0" y="54" width="60" height="2" rx="1" fill="url(#grad1)" opacity="0.7"/>
-  </g>
+  <!-- CONSULTING tagline -->
+  <text x="73" y="52"
+    font-family="'Segoe UI', system-ui, Arial, sans-serif"
+    font-size="9.5"
+    font-weight="600"
+    fill="rgba(255,255,255,0.5)"
+    letter-spacing="3.5">CONSULTING</text>
+
+  <!-- Small accent dot before CONSULTING -->
+  <circle cx="66" cy="48" r="2.5" fill="url(#blueGrad)"/>
 </svg>

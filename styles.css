@@ -164,15 +164,15 @@ section { padding: 96px 0; }
   align-items: center;
 }
 .logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+.logo-img-footer {
   height: 40px;
   width: auto;
   display: block;
-  filter: brightness(0) invert(1);
-}
-.logo-img-footer {
-  filter: brightness(0) invert(1);
   opacity: 0.85;
-  height: 36px;
 }
 
 .nav-links {
