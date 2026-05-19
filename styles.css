@@ -161,21 +161,18 @@ section { padding: 96px 0; }
 
 .nav-logo {
   display: flex;
-  align-items: baseline;
-  gap: 0;
-  font-size: 1.25rem;
-  font-weight: 800;
+  align-items: center;
 }
-.logo-dass   { color: var(--white); }
-.logo-bindra { color: var(--accent); }
-.logo-tag {
-  font-size: .7rem;
-  font-weight: 500;
-  color: var(--gray);
-  letter-spacing: .08em;
-  margin-left: 6px;
-  text-transform: uppercase;
-  align-self: center;
+.logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+.logo-img-footer {
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+  height: 36px;
 }
 
 .nav-links {
